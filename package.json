@@ -6,6 +6,7 @@
   "author": "bdurb <brian@rpmgreenville.com>",
   "license": "MIT",
   "dependencies": {
-    "mongodb": "^3.1.1"
+    "mongodb": "^3.1.1",
+    "mongoose": "^5.2.3"
   }
 }
