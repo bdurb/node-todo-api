@@ -14,3 +14,25 @@ const Todo = mongoose.model('Todo', {
     type: Number
   }
 });
+
+// const newTodo = new Todo({
+//   text: 'Cook dinner'
+// });
+
+// newTodo.save().then((doc) => {
+//   console.log('Saved todo', doc)
+// }, (e) => {
+//   console.log('Unable to save todo')
+// });
+
+const otherTodo = new Todo({
+  text: 'Feed the cat',
+  completed: true,
+  completedAt: 123
+});
+
+otherTodo.save().then((doc) => {
+  console.log(JSON.stringify(doc, undefined, 2));
+}, (err) => {
+  console.log(err)
+})
